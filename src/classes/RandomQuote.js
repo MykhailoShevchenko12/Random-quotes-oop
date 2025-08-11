@@ -9,8 +9,15 @@ class RandomQuote {
     const { id, text, author } = quotes[randomIndex];
     return new Quote(id, text, author);
   }
-  static getRandomQuoteVieAPI() {
+  static getRandomQuoteViaAPI() {
     //Request quote via API
+    const url = 'https://quoteslate.vercel.app/api/quotes/random';
+    const options = { headers: { 'Content-type': 'Application/json' } };
+
+    return fetch(url, options)
+      .then((response) => response.json())
+      .then(({ id, quote, author }) => new Quote(id, quote, author))
+      .catch((error) => console.error('Error:', error));
   }
 }
 
