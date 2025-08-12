@@ -27,10 +27,8 @@ class RandomQuotesApp {
     this.changeCurrentQuote(RandomQuote.getRandomQuote());
   }
 
-  setRandomQuoteViaAPI() {
-    RandomQuote.getRandomQuoteViaAPI().then((quote) => {
-      this.changeCurrentQuote(quote);
-    });
+  async setRandomQuoteViaAPI() {
+    this.changeCurrentQuote(await RandomQuote.getRandomQuoteViaAPI());
   }
 
   init() {
