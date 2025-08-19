@@ -44,7 +44,7 @@ hr {
   font-weight: bold;
   border: none;
   border-radius: 10px;
-  color: white;
+  color: black;
   cursor: pointer;
 }
 
@@ -56,6 +56,15 @@ hr {
 .btn-secondary {
   background-color: #41b549;
   transition: background-color 0.3s ease;
+}
+
+.btn-third {
+  background-color: #663fdc;
+  transition: background-color 0.3s ease;
+}
+
+.btn-third:hover {
+  background-color: #492d9e;
 }
 
 .btn-primary:hover {
