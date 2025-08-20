@@ -27,7 +27,7 @@ This project consists of a client-side Vanilla JavaScript app and a server-side 
 3. Change directory to the server subfolder: `cd server`.
 4. Install server dependencies by running the following command: `npm install`.
 5. Run server in the production mode: `npm start`.
-6. Configure hosting server where you run application to forward all requests to the http://localhost:3000.
+6. Configure hosting server where you run application to forward all requests to the `http://localhost:3000`.
 7. Take assigned by the hosting provider URL for your backend API server.
    For example `https://my-random-quotes-app.com`
 
